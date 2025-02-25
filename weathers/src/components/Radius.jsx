@@ -1,7 +1,12 @@
-export const Circles = () => {
+export const Circles = ({ className }) => {
   return (
-    <div>
-      <div className="size-940px border-[940px] rounded-[940px]  border-black"></div>
+    <div className="flex">
+      <div
+        className={
+          " flex justify-center left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 absolute rounded-full  border-blue-500 border " +
+          className
+        }
+      ></div>
     </div>
   );
 };
