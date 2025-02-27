@@ -1,18 +1,8 @@
-export const Icon = ({ className }) => {
+export const Icon = ({}) => {
   return (
-    <div className="flex ">
-      <img
-        className={
-          " absolute top-[45%] left-[46%] w-[ 43.289px] h-[86px] " + className
-        }
-        src="/Group1.svg"
-      ></img>
-      <img
-        className={
-          " absolute top-[45%] right-[46%] w-[ 43.289px] h-[86px] " + className
-        }
-        src="/Group.svg"
-      ></img>
+    <div className="flex absolute gap-[20px] justify-center items-center ">
+      <img className=" w-[ 43.289px] h-[86px] " src="/Group1.svg"></img>
+      <img className=" w-[ 43.289px] h-[86px] " src="/Group.svg"></img>
     </div>
   );
 };
