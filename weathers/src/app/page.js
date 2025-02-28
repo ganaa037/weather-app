@@ -1,10 +1,17 @@
+"use client";
+
 import { Card, Circles } from "@/components";
 import { Icon } from "@/components/Icon";
 import { Input } from "@/components/Input";
-import Image from "next/image";
-const[]
+import axios from "axios";
 
 export default function Home() {
+  axios
+    .get(
+      "https://api.weatherapi.com/v1/forecast.json?key=c54db69bc7dc4466bf415506241712&q=Tokyo"
+    )
+    .then((res) => console.log(res.data));
+
   return (
     <div className="flex h-screen relative justify-center ">
       <div className="bg-[#F3F4F6] w-[50%] h-screen flex justify-center items-center">

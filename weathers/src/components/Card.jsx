@@ -26,7 +26,6 @@ export const Card = ({ img, date, temp, text }) => {
         className="size-[144px]
        text-center text-[100px] font-extrabold justify-center items-center text-black"
       >
-        {" "}
         {temp}
       </div>
       <p className="text-[#FF8E27]">{text}</p>
